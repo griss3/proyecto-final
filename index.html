@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estiloproductos.css">
+    <script src="script.js"></script>
+    
+    <title>High Pixel</title>
+    
+</head>
+<body>
+    <div class="header">
+        <a href="Inicio.html">
+            <div class="header-title">High Pixel</div>
+        </a>
+        
+        <div class="header-tabs">
+            <div class="tab" onclick="cambiarContenido('ratones')">Ratones</div>
+            <div class="tab" onclick="cambiarContenido('teclados')">Teclados</div>
+            <div class="tab" onclick="cambiarContenido('audifonos')">Audífonos</div>
+            <div class="tab" onclick="cambiarContenido('laptops')">Laptops</div>
+        </div>
+    </div>
+
+    <div class="contenido">
+        
+        <div class="container">
+            <div class="image-container">
+                <img src="img/pp.jpg" alt="Imagen de Audifonos">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="contenido hidden" id="ratonesContenido">
+        <div class="contenido">
+        
+            <div class="container">
+                <div class="image-container">
+                    <img src="img/mouse/fondo.jpg" alt="Imagen de Audifonos">
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">GAMING MOUSE</div>
+    
+    
+        <div class="contenedor" id="contenedor-productos">
+            <div class="producto" onclick="mostrarProducto(1)">
+                <img src="img/mouse/1.jpg" alt="Producto 1">
+                <p class="nombre-producto">Mouse Logitech G403 Hero</p>
+            </div>
+        
+            <div class="producto" onclick="mostrarProducto(2)">
+                <img src="img/mouse/2.jpg" alt="Producto 2">
+                <p class="nombre-producto">Corsair Katar PRO Wireless</p>
+            </div>
+        
+            <div class="producto" onclick="mostrarProducto(3)">
+                <img src="img/mouse/3.jpg" alt="Producto 3">
+                <p class="nombre-producto">Razer Viper Ultimate</p>
+            </div>
+
+            <div class="contenedor">
+                <div class="producto" onclick="mostrarProducto(4)">
+                    <img src="img/mouse/4.jpg" alt="Producto 1">
+                    <p class="nombre-producto">Razer Basilisk V3 Gaming Mouse</p>
+                </div>
+            
+                <div class="producto" onclick="mostrarProducto(5)">
+                    <img src="img/mouse/5.jpg" alt="Producto 2">
+                    <p class="nombre-producto">HyperX Pulsefire Surge RGB</p>
+                </div>
+        
+                <div class="producto" onclick="mostrarProducto(6)">
+                    <img src="img/mouse/6.jpg" alt="Producto 3">
+                    <p class="nombre-producto">HyperX Modelo HX-MC003B</p>
+                </div>
+            
+                
+            
+            </div>
+        </div>
+        
+        <div id="producto-seleccionado">
+            <img id="producto-imagen" alt="Producto seleccionado">
+            <p class="nombre-producto" id="producto-nombre"></p>
+            <textarea id="descripcion" placeholder="Ingrese la descripción"></textarea>
+        </div>
+            
+        
+        
+    
+        
+        
+
+        
+        
+    </div>
+
+    <div class="contenido hidden" id="tecladosContenido">
+
+        <div class="contenido">
+        
+            <div class="container">
+                <div class="image-container">
+                    <img src="img/teclados/fondo.jpg" alt="Imagen de Audifonos">
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">TECLADOS GAMER</div>
+    
+    
+        <div class="contenedor">
+            <div class="producto">
+                <img src="img/teclados/1.jpg" alt="Producto 1">
+                <p class="nombre-producto">Teclado Hyperx Hk5</p>
+            </div>
+        
+            <div class="producto">
+                <img src="img/teclados/2.jpg" alt="Producto 2">
+                <p class="nombre-producto">Teclado Redragon K616-RGB</p>
+            </div>
+    
+            <div class="producto">
+                <img src="img/teclados/3.jpg" alt="Producto 2">
+                <p class="nombre-producto">Teclado ROWELL 87KEY</p>
+            </div>
+        
+            
+        
+        </div>
+    
+        <div class="contenedor">
+            <div class="producto">
+                <img src="img/teclados/4.jpg" alt="Producto 1">
+                <p class="nombre-producto">Teclado Gamer MK36</p>
+            </div>
+        
+            <div class="producto">
+                <img src="img/teclados/5.jpg" alt="Producto 2">
+                <p class="nombre-producto">Teclado Gamer Njotech Mecánico</p>
+            </div>
+    
+            <div class="producto">
+                <img src="img/teclados/6.jpg" alt="Producto 2">
+                <p class="nombre-producto">Teclado Gamer /Cable USB K9700</p>
+            </div>
+        
+            
+        
+        </div>
+        
+        
+    </div>
+
+    <div class="contenido hidden" id="audifonosContenido">
+
+        <div class="contenido">
+        
+            <div class="container">
+                <div class="image-container">
+                    <img src="img/audifonos/fondo.jpg" alt="Imagen de Audifonos">
+                </div>
+            </div>
+        </div>
+        <div class="titulo">AUDIFONOS GAMER</div>
+    
+    
+        <div class="contenedor">
+            <div class="producto">
+                <img src="img/audifonos/Hyperx-Cloud-Flight-Azul-1.jpg" alt="Producto 1">
+                <p class="nombre-producto">Hyperx Cloud Flight Azul</p>
+            </div>
+        
+            <div class="producto">
+                <img src="img/audifonos/2.jpg" alt="Producto 2">
+                <p class="nombre-producto">Cloud III - Auriculares para juegos</p>
+            </div>
+    
+            <div class="producto">
+                <img src="img/audifonos/3.png" alt="Producto 2">
+                <p class="nombre-producto">Audifonos Razer BlackShark V2 X Blanco</p>
+            </div>
+        
+            
+        
+        </div>
+    
+        <div class="contenedor">
+            <div class="producto">
+                <img src="img/audifonos/4.jpg" alt="Producto 1">
+                <p class="nombre-producto">Corsair Void RGB Elite Wireless Dolby® 7.1</p>
+            </div>
+        
+            <div class="producto">
+                <img src="img/audifonos/5.jpg" alt="Producto 2">
+                <p class="nombre-producto">Audifonos Gamer Corsair HS60 Pro Surround</p>
+            </div>
+    
+            <div class="producto">
+                <img src="img/audifonos/6.jpg" alt="Producto 2">
+                <p class="nombre-producto">Logitech Audifonos Gaming G733</p>
+            </div>
+   
+        </div>
+        
+    </div>
+
+    <div class="contenido hidden" id="laptopsContenido">
+
+        <div class="contenido">
+        
+            <div class="container">
+                <div class="image-container">
+                    <img src="img/laptops/fondo.jpg" alt="Imagen de Audifonos">
+                </div>
+            </div>
+        </div>
+        <div class="titulo">LAPTOPS GAMER</div>
+    
+    
+        <div class="contenedor">
+            <div class="producto">
+                <img src="img/laptops/1.jpg" alt="Producto 1">
+                <p class="nombre-producto">Asus - SQ234K</p>
+            </div>
+        
+            <div class="producto">
+                <img src="img/laptops/2.jpg" alt="Producto 2">
+                <p class="nombre-producto">MSI LEOPARD</p>
+            </div>
+    
+            <div class="producto">
+                <img src="img/laptops/3.jpg" alt="Producto 2">
+                <p class="nombre-producto">MSI Stealth 17 Studio A13VI-017 17.3</p>
+            </div>
+        
+
+        
+        </div>
+    
+        <div class="contenedor">
+            <div class="producto">
+                <img src="img/laptops/4.jpg" alt="Producto 1">
+                <p class="nombre-producto">Asus TUF Dash 15.6</p>
+            </div>
+        
+            <div class="producto">
+                <img src="img/laptops/5.jpg" alt="Producto 2">
+                <p class="nombre-producto">Razer Blade 14 Razer Negra</p>
+            </div>
+    
+            <div class="producto">
+                <img src="img/laptops/6.jpg" alt="Producto 2">
+                <p class="nombre-producto">lenovo ideapad 3 15arh05 15.6</p>
+            </div>
+        
+
+        
+        </div>
+
+    </div>
+
+    <div>
+        
+        <div class="titulos_2">
+          
+           
+            <p>Nuestro(a) Tienda online fue fundado(a) por un grupo de profesionales dedicados a diseñar productos innovadores y 
+                sostenibles que sean duraderos. Con nuestro servicio y atención al detalle excepcionales, sabemos que tu experiencia de compra
+                será perfecta de principio a fin. Echa un v
+                istazo al sitio para obtener más información sobre nuestra marca y los estándares de calidad que manejamos.</p>
+        </div>
+    </div>
+
+
+   
+</body>
+</html>
